@@ -1,21 +1,25 @@
 'use client'
 
 import * as RadioGroup from '@radix-ui/react-radio-group'
-import { StaticImageData } from 'next/image'
 import { Artes } from './artes'
+import { ArteProps } from '@/types/ArteProps'
 
 interface Props {
-  data: {
-    id: string
-    titulo?: string
-    votos?: number
-    image?: string | StaticImageData
-  }[]
+  data?: ArteProps[]
+  radioSelected: (selected: ArteProps[]) => void
 }
 
-export function RadioGroupArtes({ data }: Props) {
+export function RadioGroupArtes({ data, radioSelected }: Props) {
+  if (!data) {
+    return <p>Loading...</p>
+  }
   return (
-    <RadioGroup.Root className="flex flex-col xl:flex-row gap-10 justify-center">
+    <RadioGroup.Root
+      className="flex flex-col xl:flex-row gap-10 justify-center"
+      onValueChange={(value) =>
+        radioSelected(data.filter((i) => i.id === value))
+      }
+    >
       {data.map((arte) => (
         <RadioGroup.Item value={arte.id} key={arte.id} className="w-full group">
           <RadioGroup.Indicator />

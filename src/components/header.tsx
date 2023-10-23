@@ -10,7 +10,7 @@ export function Header() {
       <div className="flex gap-2 text-xl items-center">
         <p>Tatal de rotativas</p>
         <span className="bg-white py-1 px-2 rounded-md text-gray-900 font-bold shadow-sm shadow-white">
-          100
+          24
         </span>
       </div>
     </div>

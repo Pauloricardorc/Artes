@@ -22,7 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={roboto.className}>
-        <div className="antialiased">{children}</div>
+        <div className="antialiased min-h-screen">{children}</div>
       </body>
     </html>
   )
