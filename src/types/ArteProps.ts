@@ -6,10 +6,8 @@ export type ArteProps = {
 }
 
 export type ReentArts = {
-  selected: {
-    id: '1'
-    titulo: 'HalloWeen1'
-    votos: 200
-    image: string
-  }
+  id: '1'
+  titulo: 'HalloWeen1'
+  votos: 200
+  image: string
 }

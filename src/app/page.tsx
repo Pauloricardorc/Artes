@@ -19,9 +19,7 @@ export default function Home() {
   function handleNewArte() {
     console.log(selected)
     if (selected) {
-      axios.post('http://localhost:3333/recenteArtes', {
-        selected,
-      })
+      axios.post('http://localhost:3333/recenteArtes', selected)
     } else {
       alert('Nenhuma arte foi selecionada')
     }
@@ -31,7 +29,7 @@ export default function Home() {
     async function getRecentArts() {
       axios
         .get('http://localhost:3333/recenteArtes')
-        .then((e) => setRecentArt(e.data))
+        .then((e) => setRecentArt(e.data[0]))
     }
     getRecentArts()
   }, [])
@@ -79,7 +77,7 @@ export default function Home() {
           </span>
         </div>
         <div className="flex flex-1">
-          <Artes image={recentArt?.selected.image} />
+          <Artes image={recentArt?.image} />
         </div>
         <Link
           href="recente"

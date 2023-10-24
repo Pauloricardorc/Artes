@@ -20,7 +20,7 @@ export function RadioGroupArtes({ data, radioSelected }: Props) {
         radioSelected(data.filter((i) => i.id === value))
       }
     >
-      {data.map((arte) => (
+      {data?.map((arte) => (
         <RadioGroup.Item value={arte.id} key={arte.id} className="w-full group">
           <RadioGroup.Indicator />
           <Artes image={arte.image || ''} />

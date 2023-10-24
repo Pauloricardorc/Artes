@@ -19,12 +19,18 @@
       "image": "https://cdn.dribbble.com/userupload/3891810/file/original-d081b5e56a45f866348a5851f8e7175b.png"
     }
   ],
-  "recenteArtes": {
-    "selected": {
+  "recenteArtes": [
+    {
       "id": "1",
       "titulo": "HalloWeen1",
       "votos": 200,
       "image": "https://cdn.dribbble.com/userupload/10919423/file/original-ac87b5687ab20ea5d19a052ba52dc853.png?resize=1024x768"
+    },
+    {
+      "id": "3",
+      "titulo": "HalloWeen3",
+      "votos": 130,
+      "image": "https://cdn.dribbble.com/userupload/3891810/file/original-d081b5e56a45f866348a5851f8e7175b.png"
     }
-  }
+  ]
 }
