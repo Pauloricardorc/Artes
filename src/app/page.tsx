@@ -6,10 +6,10 @@ import axios from 'axios'
 import { useEffect, useState } from 'react'
 
 import { Artes } from '@/components/artes'
-import { Header } from '@/components/header'
 import { Progress } from '@/components/progress'
 import { RadioGroupArtes } from '@/components/radioGroup'
 import Link from 'next/link'
+import Header from '@/components/header'
 
 export default function Home() {
   const [selected, setSelected] = useState<ArteProps>()

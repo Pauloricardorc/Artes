@@ -13,8 +13,8 @@ export function Artes({ image }: Props) {
   }
   return (
     <motion.div
-      whileHover={{ scale: 1.1 }}
-      whileTap={{ scale: 0.9 }}
+      whileHover={{ scale: 1.05 }}
+      whileTap={{ scale: 0.95 }}
       transition={{ type: 'spring', stiffness: 400, damping: 17 }}
       className="relative flex w-full h-cardResponsive xl:h-full rounded-md 
       xl:rounded-full overflow-hidden cursor-pointer group-aria-checked:border-4 border-blue-600
